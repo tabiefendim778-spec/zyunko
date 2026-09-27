@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Zyunko - Bakım çalışması devam ediyor. Yeni araçlar ve projeler yakında.">
   <title>Zyunko | Bakımda</title>
-  <link rel="icon" type="image/png" href="faviconV2.png">
+  <link rel="icon" type="image/png" href="zyunko-community.png">
   <style>
     :root{--bg:#17120f;--panel:#2a1f19;--text:#f3e9dd;--muted:#b9a694;--accent:#c98b4e;--yellow:#e0a23d}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -16,9 +16,53 @@
     a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 36px));margin:auto}
     header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(23,18,15,.78);border-bottom:1px solid rgba(255,255,255,.06)}
     .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-weight:900}
-    .brand img{width:40px;height:40px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .brand img{width:40px;height:40px;border-radius:12px;object-fit:cover;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 24px rgba(0,0,0,.35)}
     .discord-btn{display:inline-flex;align-items:center;gap:9px;padding:11px 16px;border-radius:12px;background:#5865F2;color:#fff;font-weight:800;transition:.2s;box-shadow:0 12px 28px rgba(88,101,242,.2)}
     .discord-btn:hover{transform:translateY(-2px);background:#4752c4}
+
+    .discord-btn img{
+      width:22px;
+      height:22px;
+      object-fit:cover;
+      border-radius:6px;
+      display:block;
+    }
+
+
+    .youtube-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:11px 16px;
+      border-radius:12px;
+      background:#ff0000;
+      color:#fff;
+      font-weight:800;
+      transition:.2s ease;
+      box-shadow:0 12px 28px rgba(255,0,0,.18);
+    }
+
+    .youtube-btn:hover{
+      transform:translateY(-2px);
+      background:#d90000;
+      box-shadow:0 16px 32px rgba(255,0,0,.25);
+    }
+
+    .youtube-btn img{
+      width:22px;
+      height:22px;
+      object-fit:contain;
+      display:block;
+    }
+
+    .social-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
     .hero{min-height:72vh;display:grid;place-items:center;text-align:center;padding:82px 0 42px}.hero-inner{max-width:880px;animation:fadeUp .8s ease both}
     .status{display:inline-flex;align-items:center;gap:10px;color:#f0c98d;background:rgba(201,139,78,.08);border:1px solid rgba(201,139,78,.25);border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800;margin-bottom:18px}
     .status-dot{width:9px;height:9px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 6px rgba(224,162,61,.10);animation:pulse 1.8s infinite}
@@ -111,8 +155,14 @@
 </head>
 <body>
   <header><div class="container nav">
-    <a href="#" class="brand"><img src="faviconV2.png" alt="Zyunko"><span>Zyunko</span></a>
-    <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer">Discord'a Katıl</a>
+    <a href="#" class="brand"><img src="zyunko-community.png" alt="Zyunko"><span>Zyunko</span></a>
+    <div class="social-actions">
+      <a class="youtube-btn" href="https://www.youtube.com/@Zyunko158" target="_blank" rel="noopener noreferrer">
+        <img src="yotubelogo.png" alt="">
+        YouTube
+      </a>
+      <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer"><img src="faviconV2.png" alt="">Discord'a Katıl</a>
+    </div>
   </div></header>
   <main>
     <section class="hero"><div class="container hero-inner">
@@ -144,9 +194,16 @@
             Tools, cheating, texture pack ve 7/24 destek kategorileriyle
             topluluk tarafını da geliştiriyoruz. Güncellemeler için Discord'a katıl.
           </p>
-          <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer">
-            Discord Sunucusuna Git
-          </a>
+          <div class="social-actions" style="justify-content:flex-start;">
+            <a class="youtube-btn" href="https://www.youtube.com/@Zyunko158" target="_blank" rel="noopener noreferrer">
+              <img src="yotubelogo.png" alt="">
+              YouTube Kanalı
+            </a>
+            <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer">
+              <img src="faviconV2.png" alt="">
+              Discord Sunucusuna Git
+            </a>
+          </div>
         </div>
 
         <div class="community-shot">
@@ -158,7 +215,13 @@
       <div class="bottom-box">
         <h2>Bakım Bitince Görüşürüz 👷</h2>
         <p>Güncellemeleri ve duyuruları Discord sunucumuzdan takip edebilirsin.</p>
-        <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer">Zyunko Discord</a>
+        <div class="social-actions">
+          <a class="youtube-btn" href="https://www.youtube.com/@Zyunko158" target="_blank" rel="noopener noreferrer">
+            <img src="yotubelogo.png" alt="">
+            Zyunko YouTube
+          </a>
+          <a class="discord-btn" href="https://discord.gg/8NmECKd7uW" target="_blank" rel="noopener noreferrer"><img src="faviconV2.png" alt="">Zyunko Discord</a>
+        </div>
       </div>
     </div></section>
   </main>
